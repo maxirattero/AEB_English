@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    color: black;
+}
+
+a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.encabezado {
+    background-color: #0422DA;
+    color: white;
+    height: 90px;
+}
+
+.logo_encabezado {
+    margin-left: 30px;
+    margin-top: 15px;
+    float: left;
+    display: inline;
+}
+
+nav {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu_nav {
+    display: inline;
+    padding-left: 0px;
+}
+
+li {
+    display: inline-block;
+}
+
+.piedepagina {
+    background-color: #0422DA;
+    color: white;
+}
