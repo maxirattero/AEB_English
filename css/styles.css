@@ -1,42 +1,83 @@
-body {
-    font-family: sans-serif;
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.container_body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "encabezado encabezado"
+        "logo_main logo_main"
+        "bienvenida form"
+        "plataforma video_plataforma"
+        "piedepagina piedepagina"
 }
 
-a, a:hover, a:focus, a:visited {
+a {
     text-decoration: none;
     color: inherit;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #E60607;
+}
+
+a:active {
+    color: rgb(147, 0, 0);
 }
 
 .encabezado {
+    grid-area: encabezado;
     background-color: #0422DA;
     color: white;
-    height: 90px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo_encabezado {
-    margin-left: 30px;
-    margin-top: 15px;
-    float: left;
-    display: inline;
+.nav_header {
+    display: flex;
+    list-style-type: none;
 }
 
-nav {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+.nav_header a {
+    padding: 2rem;    
 }
 
-.menu_nav {
-    display: inline;
-    padding-left: 0px;
+.logo_main {
+    grid-area: logo_main;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-li {
-    display: inline-block;
+.bienvenida {
+    grid-area: bienvenida;
+    width: 50%;
+    display: flex;
+    
+}
+
+.form {
+    grid-area: form;
+    width: 50%;
+}
+
+.plataforma {
+    grid-area: plataforma;
+    width: 50%;
+}
+
+.video_plataforma {
+    grid-area: video_plataforma;
+    width: 50%;
 }
 
 .piedepagina {
+    grid-area: piedepagina;
     background-color: #0422DA;
     color: white;
 }
