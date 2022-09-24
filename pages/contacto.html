@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - AEB English Service</title>
     <link rel="icon" type="png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="../img/logo_chico-removebg.png" alt="logo_encabezado">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="examenes.html">Exámenes</a></li>
-                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="../index.html"><img src="/img/logo_chico-removebg.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="examenes.html">Exámenes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes_somos.html">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -46,13 +64,19 @@
             </fieldset>
         </form>
     </main>
-    <footer>
-        <h4>Encontranos aquí</h4>
-        <a href="https://www.facebook.com/AEB-English-Service-289729595069696/" target="_blank"><img src="../img/facebook_ico.png" alt="facebook icon"></a>
-        <a href="https://www.instagram.com/aeb.englishservice/" target="_blank"><img src="../img/instagram_ico.png" alt="instagram icon"></a>
-        <a href="https://api.whatsapp.com/send?text=Hola!%20Quisiera%20consultar%20sobre%20&phone=5493472636651" target="_blank"><img src="../img/whatsapp_ico.png" alt="whatsapp icon"></a>
-        <p>Correo Electrónico: <a href="mailto:aeb.english@gmail.com" target="_blank">aeb.english@gmail.com</a></p>
+    <footer class="piedepagina">
+        <div class="iconos">
+            <a href="https://www.facebook.com/AEB-English-Service-289729595069696/" target="_blank"><img
+                src="../img/facebook_icon_32x32.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/aeb.englishservice/" target="_blank"><img src="../img/instagram_icon_32x32.png"
+                alt="instagram icon"></a>
+            <a href="https://api.whatsapp.com/send?text=Hola!%20Quisiera%20consultar%20sobre%20&phone=5493472636651"
+                target="_blank"><img src="../img/whatsapp_icon_32x32.png" alt="whatsapp icon"></a>
+            <a href="mailto:aeb.english@gmail.com" target="_blank"><img src="../img/mail_icon_32x32.png" alt="email icon"></a>
+        </div>
         <p>AEB English Service | Córdoba - Argentina</p>
     </footer>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
