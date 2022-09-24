@@ -1,4 +1,3 @@
-
 .navbar {
     background-color: #0422DA;
 }
@@ -11,4 +10,23 @@
     font-weight: 600;
     color: white;
     margin-left: 2rem;
+}
+
+.col {
+    margin: 2rem;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.form {
+    
+}
+
+.piedepagina {
+    display: flex;
+    background-color: #0422DA;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    font-weight: 400;
 }
