@@ -7,6 +7,7 @@
     <title>AEB English Service</title>
     <link rel="icon" type="png" href="img/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="container_body">
@@ -22,53 +23,65 @@
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
             <div></div>
-        </header>
-        <section class="logo_main">
-            <img src="img/logo_grande-removebg.png" alt="logo grande">
-        </section>
-        <section class="bienvenida">
-            <h1>No lo pienses más, este es tu momento de comenzar INGLÉS</h1>
-            <h2>No lo dejes para después, un mundo de posibilidades comienza con AEB ENGLISH</h2>
-        </section>
-        <section class="form">
-            <form action="">
-                <fieldset>
-                    <legend>Ingresa tus datos</legend>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Juan" required>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Pérez" required>
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="juanperez@gmail.com" required>
-                    <br>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="+0123456789" required>
-                    <br>
-                    <label for="pais">País de residencia</label>
-                    <input type="text" name="pais" id="pais" placeholder="Argentina" required>
-                    <br>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Hola! Quisiera más información sobre..." required></textarea>
-                    <input type="submit">
-                </fieldset>
-            </form>
-        </section>
-        <section class="plataforma">
-            <p>Te presentamos la modalidad online que te permite acceder a los cursos desde el lugar donde te encuentres.</p>
-            <p>Nuestras clases interactivas son individuales o grupales con seguimientos personalizados.</p>
-            <p>Además, contamos con un sistema de aulas virtuales en las que podés contactarte con tu docente y trabajar material extra para reforzar tu aprendizaje.</p>
-        </section>
-        <section class="video_plataforma">
-            <iframe src="https://www.youtube.com/watch?v=Y_7n8F2VsjY" frameborder="0"></iframe>
-        </section>
+        <main>
+            </header>
+            <section class="logo_main">
+                <img  class="animate__animated animate__rubberBand" src="img/logo_grande-removebg.png" alt="logo_grande">
+            </section>
+            <section class="bienvenida">
+                <h1>No lo pienses más, este es tu momento de comenzar INGLÉS</h1>
+                <h2>No lo dejes para después, un mundo de posibilidades comienza con AEB ENGLISH</h2>
+            </section>
+            <section class="form">
+                <form action="">
+                    <fieldset>
+                        <legend>Ingresa tus datos</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Juan" required>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Pérez" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="juanperez@gmail.com" required>
+                        <br>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="+0123456789" required>
+                        <br>
+                        <label for="pais">País de residencia</label>
+                        <input type="text" name="pais" id="pais" placeholder="Argentina" required>
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Hola! Quisiera más información sobre..." required></textarea>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="plataforma">
+                <p>Te presentamos la modalidad online que te permite acceder a los cursos desde el lugar donde te encuentres.</p>
+                <p>Nuestras clases interactivas son individuales o grupales con seguimientos personalizados.</p>
+                <p>Además, contamos con un sistema de aulas virtuales en las que podés contactarte con tu docente y trabajar material extra para reforzar tu aprendizaje.</p>
+            </section>
+            <section class="video_plataforma">
+                <iframe src="https://www.youtube.com/watch?v=Y_7n8F2VsjY" frameborder="0"></iframe>
+            </section>
+        </main>
         <footer class="piedepagina">
-            <h4>Encontranos aquí</h4>
+            <div class="iconos">
+                <a href="https://www.facebook.com/AEB-English-Service-289729595069696/" target="_blank"><img
+                    src="img/facebook_icon_32x32.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/aeb.englishservice/" target="_blank"><img src="img/instagram_icon_32x32.png"
+                    alt="instagram icon"></a>
+                <a href="https://api.whatsapp.com/send?text=Hola!%20Quisiera%20consultar%20sobre%20&phone=5493472636651"
+                    target="_blank"><img src="img/whatsapp_icon_32x32.png" alt="whatsapp icon"></a>
+                <a href="mailto:aeb.english@gmail.com" target="_blank"><img src="img/mail_icon_32x32.png" alt="email icon"></a>
+            </div>
+            <p>AEB English Service | Córdoba - Argentina</p>
+            <!-- <h4>Encontranos aquí</h4>
             <a href="https://www.facebook.com/AEB-English-Service-289729595069696/" target="_blank"><img src="img/facebook_ico.png" alt="facebook icon"></a>
             <a href="https://www.instagram.com/aeb.englishservice/" target="_blank"><img src="img/instagram_ico.png" alt="instagram icon"></a>
             <a href="https://api.whatsapp.com/send?text=Hola!%20Quisiera%20consultar%20sobre%20&phone=5493472636651" target="_blank"><img src="img/whatsapp_ico.png" alt="whatsapp icon"></a>
             Correo Electrónico: <a href="mailto:aeb.english@gmail.com" target="_blank">aeb.english@gmail.com</a>
-            <p>AEB English Service | Córdoba - Argentina</p>
+            <p>AEB English Service | Córdoba - Argentina</p> -->
         </footer>
     </div>
 </body>
