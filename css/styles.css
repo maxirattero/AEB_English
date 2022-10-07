@@ -1,83 +1,67 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .container_body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-        "encabezado encabezado"
-        "logo_main logo_main"
-        "bienvenida form"
-        "plataforma video_plataforma"
-        "piedepagina piedepagina"
-}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "encabezado encabezado" "logo_main logo_main" "bienvenida form" "plataforma video_plataforma" "piedepagina piedepagina"; }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 600;
-}
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600; }
 
 a:hover {
-    color: #E60607;
-}
+  color: #E60607; }
 
 a:active {
-    color: rgb(147, 0, 0);
-}
+  color: #930000; }
 
 .encabezado {
-    grid-area: encabezado;
-    background-color: #0422DA;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  grid-area: encabezado;
+  background-color: #0422DA;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .nav_header {
-    display: flex;
-    list-style-type: none;
-}
+  display: flex;
+  list-style-type: none; }
 
 .nav_header a {
-    padding: 2rem;    
-}
+  padding: 2rem; }
 
 .logo_main {
-    grid-area: logo_main;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  grid-area: logo_main;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .bienvenida {
-    grid-area: bienvenida;
-    width: 50%;
-    display: flex;
-    
-}
+  grid-area: bienvenida;
+  width: 50%;
+  display: flex; }
 
 .form {
-    grid-area: form;
-    width: 50%;
-}
+  grid-area: form;
+  width: 50%; }
 
 .plataforma {
-    grid-area: plataforma;
-    width: 50%;
-}
+  grid-area: plataforma;
+  width: 50%; }
 
 .video_plataforma {
-    grid-area: video_plataforma;
-    width: 50%;
-}
+  grid-area: video_plataforma;
+  width: 50%; }
 
 .piedepagina {
-    grid-area: piedepagina;
-    background-color: #0422DA;
-    color: white;
-}
+  grid-area: piedepagina;
+  background-color: #0422DA;
+  color: white; }
