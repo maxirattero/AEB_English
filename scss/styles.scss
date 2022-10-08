@@ -93,7 +93,8 @@ a {
     }
 }
 
-main {
+// INDEX
+.main_index {
     display: grid;
     grid-area: main;
     grid-template-areas: 
@@ -138,6 +139,16 @@ main {
     grid-area: img_plataforma;
     img {
         max-width: 100%;
+    }
+}
+
+// EXAMENES
+.main_examenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        max-width: 50%;
     }
 }
 
