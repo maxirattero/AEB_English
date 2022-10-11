@@ -70,23 +70,73 @@ a {
   grid-area: logo_main;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 30px 0; }
   .logo_main img {
     max-width: 50%; }
 
 .bienvenida {
   grid-area: bienvenida;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 2em;
+  height: 300px;
+  text-align: center;
+  justify-content: center; }
 
 .form {
-  grid-area: form; }
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 15px; }
+  .form .titulo-form {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px; }
+  .form .button-form {
+    height: 45px;
+    margin: 35px 0;
+    width: 100%;
+    outline-color: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #0422DA; }
+
+.input-box input, .input-box textarea {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease; }
+
+.input-box input:focus, .input-box input:valid {
+  border-color: #E60607; }
 
 .plataforma {
-  grid-area: plataforma; }
+  grid-area: plataforma;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  height: 300px;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center; }
 
 .img_plataforma {
-  grid-area: img_plataforma; }
+  grid-area: img_plataforma;
+  margin-bottom: 20px; }
   .img_plataforma img {
     max-width: 100%; }
 
