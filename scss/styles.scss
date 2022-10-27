@@ -138,9 +138,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // max-width: 700px;
-    // width: 100%;
-    background-color: aquamarine;
     border-radius: 15px;
     .titulo-form {
         font-size: 25px;
@@ -196,6 +193,158 @@ a {
     margin-bottom: 20px;
     img {
         max-width: 100%;
+    }
+}
+
+// CURSOS
+.main_cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .titulo_cursos {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .subtitulo_cursos {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .standard {
+        position: relative;
+        width: 400px;
+        .standard_image {
+            display: block;
+            width: 100%;
+        }
+        .standard_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: color(blanco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
+            opacity: 0;
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 1;
+                border-radius: 20px;
+            }
+        }
+        .standard_overlay--blur {
+            backdrop-filter: blur(5px);
+        }
+    }
+    .golden {
+        position: relative;
+        width: 400px;
+        .golden_image {
+            display: block;
+            width: 100%;
+        }
+        .golden_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: color(blanco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
+            opacity: 0;
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 1;
+                border-radius: 20px;
+            }
+        }
+        .golden_overlay--blur {
+            backdrop-filter: blur(5px);
+        }
+    }
+    .flash {
+        position: relative;
+        width: 400px;
+        .flash_image {
+            display: block;
+            width: 100%;
+        }
+        .flash_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: color(blanco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
+            opacity: 0;
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 1;
+                border-radius: 20px;
+            }
+        }
+        .flash_overlay--blur {
+            backdrop-filter: blur(5px);
+        }
+    }
+    .incompany {
+        position: relative;
+        width: 400px;
+        .incompany_image {
+            display: block;
+            width: 100%;
+        }
+        .incompany_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: color(blanco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.5em;
+            opacity: 0;
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 1;
+                border-radius: 20px;
+            }
+        }
+        .incompany_overlay--blur {
+            backdrop-filter: blur(5px);
+        }
     }
 }
 
