@@ -1,6 +1,7 @@
 // maps
 $colors: (
     azul: #0422DA,
+    azul_card: #2336AD,
     blanco: #fff,
     negro: #000,
     rojo_hover: #E60607,
@@ -96,7 +97,6 @@ a {
 // INDEX
 .main_index {
     display: grid;
-    grid-area: main;
     grid-template-areas: 
         "logo_main logo_main"
         "bienvenida form"
@@ -198,19 +198,27 @@ a {
 
 // CURSOS
 .main_cursos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+        "titulo_cursos titulo_cursos"
+        "subtitulo_cursos subtitulo_cursos"
+        "standard golden"
+        "flash incompany";
     text-align: center;
+    justify-content: center;
     .titulo_cursos {
+        grid-area: titulo_cursos;
         font-size: 40px;
         font-weight: 700;
     }
     .subtitulo_cursos {
+        grid-area: subtitulo_cursos;
         font-size: 30px;
         font-weight: 600;
     }
     .standard {
+        grid-area: standard;
+        margin: 2em;
         position: relative;
         width: 400px;
         .standard_image {
@@ -245,6 +253,8 @@ a {
         }
     }
     .golden {
+        grid-area: golden;
+        margin: 2em;
         position: relative;
         width: 400px;
         .golden_image {
@@ -279,6 +289,8 @@ a {
         }
     }
     .flash {
+        grid-area: flash;
+        margin: 2em;
         position: relative;
         width: 400px;
         .flash_image {
@@ -313,6 +325,8 @@ a {
         }
     }
     .incompany {
+        grid-area: incompany;
+        margin: 2em;
         position: relative;
         width: 400px;
         .incompany_image {
@@ -346,15 +360,89 @@ a {
             backdrop-filter: blur(5px);
         }
     }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 // EXAMENES
 .main_examenes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+        "titulo_exam titulo_exam"
+        "subtitulo_exam subtitulo_exam"
+        "ielts lingua"
+        "toefl toefl";
+    text-align: center;
+    justify-items: center;
     img {
-        max-width: 50%;
+        max-width: 75%;
+        box-shadow: 5px 5px 10px color(negro);
+        border-radius: 15px;
+        margin: 20px;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo_exam {
+        grid-area: titulo_exam;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .subtitulo_exam {
+        grid-area: subtitulo_exam;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .ielts {
+        grid-area: ielts;
+        max-width: 600px;
+        min-width: 400px;
+        color: color(blanco);
+        font-size: 1.25em;
+        background-color: color(azul_card);
+        border-radius: 25px;
+        padding: 1em;
+        margin: 1em;
+    }
+    .lingua {
+        grid-area: lingua;
+        max-width: 600px;
+        min-width: 400px;
+        color: color(blanco);
+        font-size: 1.25em;
+        background-color: color(azul_card);
+        border-radius: 25px;
+        padding: 1em;
+        margin: 1em;
+    }
+    .toefl {
+        grid-area: toefl;
+        max-width: 600px;
+        min-width: 400px;
+        color: color(blanco);
+        font-size: 1.25em;
+        background-color: color(azul_card);
+        border-radius: 25px;
+        padding: 1em;
+        margin: 1em;
+    }
+}
+
+// QUIENES SOMOS
+.main_aboutus {
+    .titulo_aboutus {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .description_aboutus {
+        text-align: center;
     }
 }
 

@@ -60,7 +60,6 @@ a {
 
 .main_index {
   display: grid;
-  grid-area: main;
   grid-template-areas: "logo_main logo_main" "bienvenida form" "plataforma img_plataforma"; }
   @media (max-width: 576px) {
     .main_index {
@@ -140,17 +139,21 @@ a {
     max-width: 100%; }
 
 .main_cursos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
+  display: grid;
+  grid-template-areas: "titulo_cursos titulo_cursos" "subtitulo_cursos subtitulo_cursos" "standard golden" "flash incompany";
+  text-align: center;
+  justify-content: center; }
   .main_cursos .titulo_cursos {
+    grid-area: titulo_cursos;
     font-size: 40px;
     font-weight: 700; }
   .main_cursos .subtitulo_cursos {
+    grid-area: subtitulo_cursos;
     font-size: 30px;
     font-weight: 600; }
   .main_cursos .standard {
+    grid-area: standard;
+    margin: 2em;
     position: relative;
     width: 400px; }
     .main_cursos .standard .standard_image {
@@ -180,6 +183,8 @@ a {
     .main_cursos .standard .standard_overlay--blur {
       backdrop-filter: blur(5px); }
   .main_cursos .golden {
+    grid-area: golden;
+    margin: 2em;
     position: relative;
     width: 400px; }
     .main_cursos .golden .golden_image {
@@ -209,6 +214,8 @@ a {
     .main_cursos .golden .golden_overlay--blur {
       backdrop-filter: blur(5px); }
   .main_cursos .flash {
+    grid-area: flash;
+    margin: 2em;
     position: relative;
     width: 400px; }
     .main_cursos .flash .flash_image {
@@ -238,6 +245,8 @@ a {
     .main_cursos .flash .flash_overlay--blur {
       backdrop-filter: blur(5px); }
   .main_cursos .incompany {
+    grid-area: incompany;
+    margin: 2em;
     position: relative;
     width: 400px; }
     .main_cursos .incompany .incompany_image {
@@ -266,13 +275,73 @@ a {
         border-radius: 20px; }
     .main_cursos .incompany .incompany_overlay--blur {
       backdrop-filter: blur(5px); }
+  @media (max-width: 576px) {
+    .main_cursos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .main_examenes {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: grid;
+  grid-template-areas: "titulo_exam titulo_exam" "subtitulo_exam subtitulo_exam" "ielts lingua" "toefl toefl";
+  text-align: center;
+  justify-items: center; }
   .main_examenes img {
-    max-width: 50%; }
+    max-width: 75%;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 15px;
+    margin: 20px; }
+  @media (max-width: 576px) {
+    .main_examenes {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .main_examenes .titulo_exam {
+    grid-area: titulo_exam;
+    font-size: 40px;
+    font-weight: 700; }
+  .main_examenes .subtitulo_exam {
+    grid-area: subtitulo_exam;
+    font-size: 30px;
+    font-weight: 600; }
+  .main_examenes .ielts {
+    grid-area: ielts;
+    max-width: 600px;
+    min-width: 400px;
+    color: #fff;
+    font-size: 1.25em;
+    background-color: #2336AD;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 1em; }
+  .main_examenes .lingua {
+    grid-area: lingua;
+    max-width: 600px;
+    min-width: 400px;
+    color: #fff;
+    font-size: 1.25em;
+    background-color: #2336AD;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 1em; }
+  .main_examenes .toefl {
+    grid-area: toefl;
+    max-width: 600px;
+    min-width: 400px;
+    color: #fff;
+    font-size: 1.25em;
+    background-color: #2336AD;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 1em; }
+
+.main_aboutus .titulo_aboutus {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700; }
+
+.main_aboutus .description_aboutus {
+  text-align: center; }
 
 .piedepagina {
   display: flex;
