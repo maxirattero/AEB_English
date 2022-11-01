@@ -77,19 +77,25 @@ a {
 .bienvenida {
   grid-area: bienvenida;
   display: flex;
+  background-color: #F0F3FF;
   flex-direction: column;
   padding: 2em;
-  height: 300px;
   text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+  .bienvenida .img_welcome {
+    margin: 1em;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #000; }
 
 .form {
   grid-area: form;
   display: flex;
+  background-color: #F0F3FF;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-radius: 15px; }
+  align-items: center; }
   .form .titulo-form {
     font-size: 25px;
     font-weight: 500;
@@ -128,6 +134,7 @@ a {
   flex-direction: column;
   padding: 2em;
   height: 300px;
+  font-size: 1.2em;
   font-weight: 600;
   text-align: center;
   justify-content: center; }
@@ -145,8 +152,10 @@ a {
   justify-content: center; }
   .main_cursos .titulo_cursos {
     grid-area: titulo_cursos;
-    font-size: 40px;
-    font-weight: 700; }
+    font-size: 50px;
+    font-weight: 700;
+    color: #031D94;
+    text-shadow: 1px 2px #E60607; }
   .main_cursos .subtitulo_cursos {
     grid-area: subtitulo_cursos;
     font-size: 30px;
@@ -298,8 +307,10 @@ a {
       align-items: center; } }
   .main_examenes .titulo_exam {
     grid-area: titulo_exam;
-    font-size: 40px;
-    font-weight: 700; }
+    font-size: 50px;
+    font-weight: 700;
+    color: #031D94;
+    text-shadow: 1px 2px #E60607; }
   .main_examenes .subtitulo_exam {
     grid-area: subtitulo_exam;
     font-size: 30px;
@@ -335,13 +346,44 @@ a {
     padding: 1em;
     margin: 1em; }
 
-.main_aboutus .titulo_aboutus {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700; }
+.main_aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main_aboutus .titulo_aboutus {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #031D94;
+    text-shadow: 1px 2px #E60607; }
+  .main_aboutus .description_aboutus {
+    padding: 1em;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center; }
+    .main_aboutus .description_aboutus .list {
+      color: #E60607; }
+  .main_aboutus .img_aboutus {
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 25px;
+    box-shadow: 2px 2px 8px #000; }
 
-.main_aboutus .description_aboutus {
-  text-align: center; }
+.main_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.titulo_contacto {
+  font-size: 50px;
+  font-weight: 700;
+  color: #031D94;
+  text-shadow: 1px 2px #E60607; }
+
+.subtitulo_contacto {
+  font-size: 30px;
+  font-weight: 600; }
 
 .piedepagina {
   display: flex;
